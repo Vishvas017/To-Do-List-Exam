@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <section class="mytodo-container">
+        <div class="mytodo-list">
+        <form action="javascript:void(0);" id="CreateForm">
+            <input type="text" id="add-task" placeholder="New Task"> 
+            <input type="submit" onclick="CreateTask()" value="Create">
+        </form>
+         <form action="javascript:void(0);" id="UpdateForm"> 
+         <input type="text" id="update-task"> <input type="submit" value="Update"> <a onclick="CloseInput()" id="close">&#10006;</a></form>
+        <p id="counter"></p>
+         <table>
+         <tr><th>My Todo List</th></tr>
+         <tbody id="mytodo-tasks"></tbody>
+         </table>
+         </div>
+         </section>
+         <script src="main.js"></script>
+</body>
+</html>
